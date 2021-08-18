@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <img :src="require(imageMobile)" alt="Image of the Card">
+      <img :src="require(`${imageMobile}`)" alt="Image of the Card">
     </div>
     <div class="card-content">
       <h1 class="card-title">{{title}}</h1>
