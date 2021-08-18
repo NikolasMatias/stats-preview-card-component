@@ -1,5 +1,5 @@
 <template>
-  <Card imageMobile="./assets/images/image-header-mobile.jpg"/>
+  <Card imageMobile="../assets/images/image-header-mobile.jpg"/>
 </template>
 
 <script lang="ts">

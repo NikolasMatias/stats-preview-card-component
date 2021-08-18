@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <img :src="require(`${imageMobile}`)" alt="Image of the Card">
+      <img :src="require(imageMobile)" alt="Image of the Card">
     </div>
     <div class="card-content">
       <h1 class="card-title">{{title}}</h1>
@@ -23,6 +23,9 @@ interface IExtraInformation {
 
 export default defineComponent({
   name: 'Card',
+  mounted () {
+    console.log(this.imageMobile)
+  },
   props: {
     imageMobile: String,
     imageDesktop: String,
