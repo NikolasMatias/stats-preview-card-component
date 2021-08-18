@@ -1,5 +1,5 @@
 <template>
-  <Card imageMobile="./assets/logo.png"/>
+  <Card imageMobile="./assets/images/image-header-mobile.jpg"/>
 </template>
 
 <script lang="ts">
@@ -19,6 +19,7 @@ $veryDarkBlue: hsl(233, 47%, 7%);
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: $veryDarkBlue;
 }
 #app {
