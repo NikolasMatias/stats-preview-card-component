@@ -1,5 +1,7 @@
 <template>
-  <Card imageMobile="../assets/images/image-header-mobile.jpg"/>
+  <Card :imageMobile="require('./assets/images/image-header-mobile.jpg')"
+        title="Get insights that help your business grow."
+        description="Discover the benefits of data analytics and make better decisions regarding  revenue, customer experience, and overall efficiency."/>
 </template>
 
 <script lang="ts">
@@ -18,20 +20,20 @@ export default defineComponent({
 $veryDarkBlue: hsl(233, 47%, 7%);
 
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   background-color: $veryDarkBlue;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 #app {
-  display: grid;
-  place-items: center;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-height: 100vh;
   width: 100vw;
 
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

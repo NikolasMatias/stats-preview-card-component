@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <img :src="require(`${imageMobile}`)" alt="Image of the Card">
+      <img :src="imageMobile" alt="Image of the Card">
     </div>
     <div class="card-content">
       <h1 class="card-title">{{title}}</h1>
@@ -37,5 +37,30 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+  $darkDesaturatedBlue: hsl(244, 38%, 16%);
 
+  .card {
+    width: 80%;
+    height: 80%;
+
+    background-color: $darkDesaturatedBlue;
+
+    & .card-image {
+      $darkDesaturatedBlue: hsl(244, 38%, 16%);
+    }
+
+    & .card-image img {
+      max-width: 100%;
+      border-radius: 1rem 1rem 0 0;
+      background-blend-mode: screen;
+    }
+
+    & .card-title {
+
+    }
+
+    & .card-description {
+
+    }
+  }
 </style>
