@@ -8,7 +8,7 @@ const Router: React.FC = () => (
         <Routes>
             <Route path="/" element={<Dashboard />}/>
 
-            <Route element={<PageNotFound />}/>
+            <Route path="*" element={<PageNotFound />}/>
         </Routes>
     </BrowserRouter>
 )

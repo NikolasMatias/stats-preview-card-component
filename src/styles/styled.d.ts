@@ -4,10 +4,16 @@ interface weights {
     value: string;
 }
 
+interface url {
+    value: string;
+}
+
 interface font {
     family: string;
     weights: weights[];
     fontSize: string;
+    url?: string;
+    urls?: url[];
 }
 
 declare module'styled-components' {

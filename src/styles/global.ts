@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  @import ${ ({ theme }) => theme.typography.fonts[0].url };
+  @import ${ ({ theme }) => theme.typography.fonts[1].url };
+  
   * {
     margin: 0;
     padding: 0;

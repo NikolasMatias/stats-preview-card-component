@@ -10,14 +10,16 @@ const main: DefaultTheme = {
                     {value: '400'},
                     {value: '700'}
                 ],
-                fontSize: '15px'
+                fontSize: '15px',
+                url: "url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap')"
             },
             {
                 family: 'Lexend Deca',
                 weights: [
                     {value: '400'}
                 ],
-                fontSize: '15px'
+                fontSize: '15px',
+                url: "url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap')"
             }
         ],
         fontSize: '15px'
