@@ -28,6 +28,7 @@ const main: DefaultTheme = {
         mainBackground: 'hsl(233, 47%, 7%)',
         cardBackground: 'hsl(244, 38%, 16%)',
         accent: 'hsl(277, 64%, 61%)',
+        accentBackground: 'hsla(277, 64%, 61%, 50%)',
 
         mainHeading: 'hsl(0, 0%, 100%)',
         stats: 'hsl(0, 0%, 100%)',

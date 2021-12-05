@@ -27,6 +27,7 @@ declare module'styled-components' {
             mainBackground: string;
             cardBackground: string;
             accent: string;
+            accentBackground: string;
 
             mainHeading: string;
             stats: string;

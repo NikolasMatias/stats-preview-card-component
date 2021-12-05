@@ -20,6 +20,7 @@ export const Row = styled.div`
     width: 75vw;
     height: 60vh;
     border-radius: 10px 0 0 10px;
+    text-align: left;
   }
 `;
 
@@ -28,6 +29,7 @@ export const Content = styled.div`
 
   @media(min-width: 720px) {
     grid-area: content;
+    margin: 3rem 5rem 0 3rem;
   }
 `;
 
@@ -38,9 +40,9 @@ export const Tickets = styled.div`
   
   @media(min-width: 720px) {
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    margin: 1.5rem 0 1.5rem 0;
+    width: auto;
+    justify-content: space-between;
+    margin: 1.5rem 5rem 1.5rem 3rem;
     grid-area: tickets;
   }
 `;
@@ -49,7 +51,7 @@ export const Ticket = styled.div`
     margin: 1.5rem 0 1.5rem 0;
   
   @media(min-width: 720px) {
-    margin: 0 1.5rem 0 1.5rem;
+    margin: 0 2rem 0 2rem;
   }
 `;
 
@@ -61,19 +63,40 @@ export const ComplementTicket = styled.p`
   color: ${({ theme }) => theme.colors.statHeadings};
 `;
 
+export const ImageContainer = styled.div`
+  height: 30vh;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    background: ${ ({ theme }) =>  theme.colors.accentBackground};
+    background-size: cover;
+    
+    @media(min-width: 720px) {
+      border-radius: 0 10px 10px 0;
+    }
+
+    @media(min-width: 720px) {
+      height: 60vh;
+    }
+  }
+`;
+
 export const Image = styled.img`
   height: 30vh;
   width: 100%;
   border-radius: 10px 10px 0 0;
   position: relative;
-  
-  &::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 10px 0 0;
-    background-color: ${ ({ theme }) =>  theme.colors.accent};
-  }
 
   @media(min-width: 720px) {
     grid-area: image;

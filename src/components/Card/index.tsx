@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Content, Image, Ticket, QuantityTicket, ComplementTicket, Tickets} from './styles'
+import {Row, Content, Image, Ticket, QuantityTicket, ComplementTicket, Tickets, ImageContainer} from './styles'
 import ITicket from "~/modals/ITicket";
 
 interface ICard {
@@ -10,7 +10,9 @@ interface ICard {
 const Card: React.FC<ICard> = ({ children, image , tickets}) => {
     return (
         <Row>
-            <Image src={image} alt="Imagem de apresentação do Header"/>
+            <ImageContainer>
+                <Image src={image} alt="Imagem de apresentação do Header"/>
+            </ImageContainer>
             <Content>{children}</Content>
             {tickets && <Tickets>
                 {tickets?.map((ticket, index) => {

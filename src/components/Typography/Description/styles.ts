@@ -6,4 +6,8 @@ export const Description = styled.h3`
   font-weight: ${ ({ theme }) => theme.typography.fonts[0].weights[1].value};
   text-align: center;
   margin-top: 1rem;
+
+  @media(min-width: 720px) {
+    text-align: left;
+  }
 `;
