@@ -11,7 +11,7 @@ const main: DefaultTheme = {
                     {value: '700'}
                 ],
                 fontSize: '15px',
-                url: "url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap')"
+                url: "url('./fonts/Inter/Inter-VariableFont_slnt,wght.ttf')"
             },
             {
                 family: 'Lexend Deca',
@@ -19,7 +19,7 @@ const main: DefaultTheme = {
                     {value: '400'}
                 ],
                 fontSize: '15px',
-                url: "url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap')"
+                url: "url('./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf')"
             }
         ],
         fontSize: '15px'

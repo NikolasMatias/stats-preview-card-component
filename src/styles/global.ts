@@ -1,8 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import ${ ({ theme }) => theme.typography.fonts[0].url };
-  @import ${ ({ theme }) => theme.typography.fonts[1].url };
+  @font-face {
+    font-family: ${({ theme }) => theme.typography.fonts[0].family};
+    src: local(${({ theme }) => theme.typography.fonts[0].family}) ${ ({ theme }) => theme.typography.fonts[0].url } format('truetype');
+  }
+
+  @font-face {
+    font-family: ${({ theme }) => theme.typography.fonts[1].family};
+    src: local(${({ theme }) => theme.typography.fonts[1].family}) ${ ({ theme }) => theme.typography.fonts[1].url } format('truetype');
+  }
   
   * {
     margin: 0;
