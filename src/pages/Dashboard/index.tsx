@@ -21,7 +21,6 @@ const Dashboard: React.FC = () => {
             <Card image={ width < 720 ? ImageHeaderMobile : ImageHeaderDesktop } tickets={tickets}>
                 <Title>Get <Bold>insights</Bold> that help your business grow.</Title>
                 <Description>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</Description>
-
             </Card>
         </Container>
     );

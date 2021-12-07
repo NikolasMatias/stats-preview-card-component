@@ -7,7 +7,19 @@ export const Title = styled.h1`
 
   @media(min-width: 720px) {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 1.4rem;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 2rem;
+  }
+
+  @media(min-width: 1400px) {
+    font-size: 2.5rem;
   }
 `;

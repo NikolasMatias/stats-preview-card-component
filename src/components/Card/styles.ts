@@ -29,6 +29,18 @@ export const Content = styled.div`
 
   @media(min-width: 720px) {
     grid-area: content;
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  @media(min-width: 992px) {
+    margin: 3rem 4rem 0 2rem;
+  }
+
+  @media(min-width: 1200px) {
+    margin: 3rem 5rem 0 3rem;
+  }
+
+  @media(min-width: 1400px) {
     margin: 3rem 5rem 0 3rem;
   }
 `;
@@ -49,18 +61,38 @@ export const Tickets = styled.div`
 
 export const Ticket = styled.div`
     margin: 1.5rem 0 1.5rem 0;
-  
+
   @media(min-width: 720px) {
+    margin: 0 .5rem 0 .5rem;
+  }
+  
+  @media(min-width: 1400px) {
     margin: 0 2rem 0 2rem;
   }
 `;
 
 export const QuantityTicket = styled.h2`
-  color: ${({ theme }) => theme.colors.stats};`;
+  color: ${({ theme }) => theme.colors.stats};
+  @media(min-width: 720px) {
+    font-size: 1rem;
+  }
+
+  @media(min-width: 992px) {
+    font-size: 1.5rem;
+  }
+`;
 
 export const ComplementTicket = styled.p`
   font-size: .8rem;
   color: ${({ theme }) => theme.colors.statHeadings};
+
+  @media(min-width: 720px) {
+    font-size: .6rem;
+  }
+
+  @media(min-width: 992px) {
+    font-size: .8rem;
+  }
 `;
 
 export const ImageContainer = styled.div`

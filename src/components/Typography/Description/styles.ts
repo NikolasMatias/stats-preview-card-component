@@ -9,5 +9,14 @@ export const Description = styled.h3`
 
   @media(min-width: 720px) {
     text-align: left;
+    font-size: .7rem;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: .9rem;
+  }
+
+  @media(min-width: 1400px) {
+    font-size: 1rem;
   }
 `;
